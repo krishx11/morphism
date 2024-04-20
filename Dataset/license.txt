@@ -1,0 +1,23 @@
+The "AMSL Face Morph Image Data Set" is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY. No author or distributor accepts responsibility to anyone for the consequences of using it or for whether it serves any particular purpose or works at all.
+
+The morphed face images in this data set are licensed under the Creative Commons Attribution-ShareAlike 3.0 License (CC BY-SA 3.0). You are free to share, to copy, distribute and transmit the data and to remix or adapt the data under the following conditions:
+
+The AMSL Face Morph Image Data Set includes:
+
+1. Genuine (non-morphed) face images from
+
+   a. the Face Research Lab London Set (CC BY 4.0, https://figshare.com/articles/Face_Research_Lab_London_Set/5047666)
+   b. the Utrecht ECVP Dataset (PICS, see http://pics.stir.ac.uk/) modified in the way to comply with the requirements of the ICAO portrait quality standard for eMRTD [1] and to fit on a chip of an eMRTD
+
+2. Morphed face images generated from the selected pairs of face images in the two aforementioned data sets using the morphing approach reported in [2].
+
+If you are showing results based on this data set, you must cite the paper as well as the both original data sets.
+
+If you alter, transform or build upon the data, you may distribute the resulting work only under the same, similar or a compatible license.
+
+You are not allowed to use or distribute the data set or separated images of morphed images for commercial purposes as, for example, licensing or selling the data, or using the data with a purpose to procure a commercial gain without written permission.
+
+All rights not expressly granted to you are reserved by the authors.
+
+[1] A. Wolf, ICAO: Portrait Quality (Reference Facial Images for MRTD), Draft Version 0.7. Standard. International Civil Aviation Organization, 2016
+[2] T. Neubert, A. Makrushin, M. Hildebrandt, C. Kraetzer and J. Dittmann, Extended StirTrace Benchmarking of Biometric and Forensic Qualities of Morphed Face Images, IET Biometrics, Volume 7, Issue 4, pp. 325–332, 2018
