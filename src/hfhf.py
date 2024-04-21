@@ -51,7 +51,7 @@ def create_model(input_shape):
     return model
 
 # Load and preprocess data
-dataset_path = "/Users/krishgandhi/Desktop/Morph_det/Dataset"
+dataset_path = "/Users/krishgandhi/Desktop/morphism/Dataset"
 data, labels = load_data(dataset_path)
 
 # Split the data into training and testing sets
