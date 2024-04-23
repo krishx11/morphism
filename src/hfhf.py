@@ -64,6 +64,8 @@ model = create_model(input_shape)
 # Train the model
 model.fit(X_train, y_train, epochs=10, batch_size=32, validation_data=(X_test, y_test))
 
+model.save("/src/morph_detection.keras")
+
 # Evaluate the model
 test_loss, test_acc = model.evaluate(X_test, y_test)
 print(f'Test accuracy: {test_acc}')
