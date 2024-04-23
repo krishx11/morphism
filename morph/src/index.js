@@ -1,17 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+document.getElementById('upload-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    var formData = new FormData();
+    formData.append('file', document.getElementById('image-upload').files[0]);
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+    fetch('/classify', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        document.getElementById('result').innerText = 'Prediction: ' + data.prediction;
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+});
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
