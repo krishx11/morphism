@@ -4,7 +4,7 @@ from tensorflow.keras.models import load_model
 from PIL import Image
 import numpy as np
 
-app = Flask(_name_)
+app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 model = load_model("morph_detection_model.h5")  # Load your trained model
 
@@ -40,5 +40,9 @@ def classify():
 
         return jsonify({"prediction": class_label}), 200
 
-if _name_ == '_main_':
+if __name__ == '__main__':
+    # Ensure the uploads directory exists
+    if not os.path.exists("uploads"):
+        os.makedirs("uploads")
+
     app.run(debug=True)
